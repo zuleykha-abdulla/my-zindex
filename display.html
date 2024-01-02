@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="/css/dinamik.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Display xüsusiyyəti</h1>
+      <p>
+        Display xüsusiyyəti elementin qutusunun növünü təyin edir. HTML-də
+        standart ekran xüsusiyyətinin dəyəri HTML spesifikasiyalarından və ya
+        brauzer/istifadəçinin seçdiyi standartdan asılıdır. Əksər elementlər
+        üçün standart displey dəyəri blok və ya inline-dır.
+      </p>
+      <h2>CSS Display Property necə işləyir?</h2>
+      <p>
+        Səhifədə göstərilən hər bir element müəyyən ekran xüsusiyyətinə
+        malikdir. İstifadəçinin ekran xüsusiyyətini təyin edə bilir.
+      </p>
+      <ul>
+        <li>Sintaksis</li>
+        <li>display</li>
+        <li>value</li>
+      </ul>
+    </div>
+<hr>
+    <div>
+      <h1>Blok və sətir elementləri</h1>
+      <p>
+        HTML-də iki vacib element kateqoriyası vardır: blok və sətir elementləri
+      </p>
+     <p> Əsas blok elementləri aşağıdakılardır:
+
+      <div> elementi
+      başlıqlar (h1-h6)
+      paraqraf (p)
+      siyahı (ul, ol, li)</p>
+      <p>Tez-tez istifadə olunan sətir elementləri aşağıdakılardır:
+      
+      span, a , em, strong, </p>
+      <img src="/img/inlineelemnt.jpg" alt="">
+      <img src="/img/blockelement.jpg" alt="">
+    </div>
+    <div>
+      <img src="/img/blockturk.jpg" alt="">
+      <img src="/img/davam.jpg" alt="">
+
+    </div>
+    <hr>
+<!------ inline elementler-->
+
+<div>
+  <h1>Display: inline</h1>
+<p>Bir elementi daxili element kimi göstərmək üçün istifadə olunur. Daxil edilmiş elementlər bir sətirdə, yəni üfüqi olaraq göstərilir və lazım olan qədər genişlik alacaq. Daxili xüsusiyyət istifadəçi tərəfindən təyin olunan hündürlüyə və enə məhəl qoymur.</p>
+<div class="displayElements">
+  <div id="div1">DIV I</div>
+  <div id="div2">DIV II</div>
+  <div id="div3">DIV III</div>
+
+</div>
+</div>
+
+<!---linkleri inline bir xett uzre yerlesidirir-->
+
+<div class="inline">
+
+<p>Üfüqi menyu kimi linklərin siyahısını göstər:</p>
+
+<ul>
+  <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+  <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+  <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+</div>
+<hr>
+<!----block elementleri-->
+
+<div>
+<h1>Display: block</h1>
+<p>Blok elementləri kimi elementləri göstərmək üçün istifadə olunur. Onlar bir-birinin altına yerləşdirilir. Bu <div> elementinin standart dəyəridir. Burada hündürlüyü və eni dəyişdirilə bilər, lakin müəyyən edilmədikdə, konteynerin enini alacaq.
+</p>
+
+<div class="displayelement">
+  <div id="div4">DIV I</div>
+  <div id="div5">DIV II</div>
+  <div id="div6">DIV III</div>
+
+</div>
+</div>
+<!--- linkleri block kimi yerlesdirir-->
+
+<div class="block"></div>
+<a href="/html/default.asp" target="_blank">HTML</a>
+<a href="/css/default.asp" target="_blank">CSS</a>
+<a href="/js/default.asp" target="_blank">JavaScript</a>
+
+</div>
+
+<div>
+  <h1>Span elementlərindən istifade olunan zaman blok elementləri kimi nəzərə çarpır</h1>
+<span>Nümayiş etdirilən xüsusiyyət</span>
+  <span>bir dəyəri "blok" nəticə verir ki,</span>
+  <span>hər span elementləri arasında </span> <span>bir xətt fasiləsi yaranir.</span>
+
+</div>
+<hr>
+
+<!---display none-->
+
+<div>
+<h1>Display: none</h1>
+<p>Elementi ekranda göstərməmək üçün istifadə olunur. Səhifənin tərtibatı elə göstəriləcək ki, sanki element silinib və heç vaxt mövcud olmayıb.
+</p>
+
+<div class="displaynone">
+  <div id="div7">DIV I</div>
+  <div id="div8">DIV II</div>
+  <div id="div9">DIV III</div>
+
+</div>
+</div>
+
+<div>
+<h3>Bu görünən başlıqdır</h3>
+<h3 class="hidden">Bu gizli basligdir</h3>
+<p>Qeyd edək ki, displeylə h3 elementi heç bir yer tutmur.</p>
+</div>
+
+<div>
+
+  <h4>Bu görünən başlıqdır</h4>
+  <h4 class="hidden">Bu, gizli başliqdir</h4>
+  <p>Diqqət yetirin ki, gizli başlıq h4 hələ də yer alır.</p>
+  
+</div>
+<hr>
+<!--Display: inline-block-->
+
+<div>
+<h1>Display: inline-block</h1>
+<p>Adından göründüyü kimi, bu, həm inline, həm də blokun xüsusiyyətlərini göstərir. Yuxarıda gördük ki, inline elementlər bir-birinin yanında yerləşdirilir və onların açıq şəkildə təyin olunan hündürlüyü və eni göstərilmir. Bunun əksinə olaraq, blok elementləri bizim təyin etdiyimiz hündürlüyü və eni göstərir.
+  Bu xassə dəyəri elementləri sıra ilə tənzimləmək üçün istifadə olunur, lakin hündürlüyü və eni təyin etməyə və veb səhifəsində əks etdirməyə imkan verir. Bu, inline və blok xassə dəyərlərinin birləşməsidir.
+  </p>
+  <div class="inlineblock">
+    <div id="div10">DIV I</div>
+    <div id="div11">DIV II</div>
+    <div id="div12">DIV III</div>
+  
+  </div>
+</div>
+
+<div>
+
+  <h1>Üfüqi Naviqasiya Linkləri</h1>
+  <p>Ön qurğulu olaraq siyahı öğeleri şaquli olaraq göstərilir. Bu nümunədə displeydən istifadə edirik: inline-block onları üfüqi (yan-yana) göstərmək üçün.</p>
+  <p>Qeyd: Əgər brauzer pəncərəsini yenidən yükləsəniz, linklər həddindən artıq kütləyə çevrildikdə avtomatik olaraq qırılacaq.</p>
+  
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#clients">Our Clients</a></li>  
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+
+</div>
+
+<hr>
+
+<div>
+<h1>Display: flex və display: grid</h1>
+<p>Display xüsusiyyətlərindən ən çox istifadə olunanlarındandır deyə bilərik. </p>
+
+<h1>The flex Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div>
+
+<p><b>Qeyd:</b>IE11 və daha yeni versiyalar flex mülkiyyətini dəstəkləyir. Internet Explorer 10 alternativ, -ms-flex mülkiyyət dəstəkləyir.</p>
+
+</div>
+
+
+
+
+
+
+  </body>
+</html>

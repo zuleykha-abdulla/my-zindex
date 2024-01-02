@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Z-index</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Z-index</h1>
+      <img src="/img/10.jpg" />
+      <p>
+        CSS sizə müxtəlif bölmələrdən ibarət təbəqələr yaratmaq imkanı verir.
+        CSS təbəqələri bir-biri ilə üst-üstə düşən elementlərə z-index
+        xassəsinin tətbiqinə icazə verir. Z-index xassəsindən layların üst-üstə
+        effektini yaratmaq üçün position xassəsi ilə birlikdə istifadə olunur.
+        Hansı elementin yuxarıda, hansı elementin isə aşağıda yer alacağını
+        təyin edə bilərsiniz.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 2)</div>
+      <div class="green-box">Green box (z-index: 3)</div>
+    </div>
+
+    <br />
+
+    <div class="box">
+      <h1>Z-index aıd diger bir numunə nəzərdən kecirək</h1>
+      <div class="red-box">Red box (z-index: 1)</div>
+      <div class="yellow-box">Yellow box (z-index: 2)</div>
+      <div class="pink-box">Pink box (z-index: 3)</div>
+      <h1>Səkil üzrə əməliyyat</h1>
+    </div>
+
+    <div class="qutu">
+      <div class="roze-box">Ag Qızıl gul (z-index: 1)</div>
+      <div class="rose-box">Pink Qızıl gül (z-index: 2)</div>
+      <div class="tree-box">Sari Qızıl gül (z-index: 3)</div>
+    </div>
+
+    <div class="about">
+      <h1>
+        Inteqerlər (müsbət, mənfi və sıfır) – qiymət kimi istifadə olunur.
+      </h1>
+      <p>
+        Dəyər nə qədər yüksək olarsa, əşya daha aşağı dəyərə malik olan
+        elementlərlə müqayisə olunur. Əgər , HTML kodunda aşağıda təsvir olunan
+        element ön plandadır. Mənfi dəyərdən istifadə etmək məqbuldur.z-index Bu
+        halda elementlərin sırası ədədi dəyərlərdən başqa, avtomatik olaraq
+        onların HTML kodundakı mövqeyi və valideynə məxsus olması əsasında
+        qurulur, belə ki, uşaq elementləri öz valideyni ilə eyni nömrəyə
+        malikdirlər.auto (auto) Konteyner yerli örtüyün örtüyüni yaratmayacaq.
+        Hazırkı overlay kontekstində qabın səviyyəsi valideyninki ilə eynidir.
+        (integer) Bir integer indiki overlay kontekstində konteynerin
+        səviyyəsini müəyyən edir. Konteyner həmçinin öz səviyyəsinin olacağı
+        lokal overlay kontekstini yaradacaq . Bu o deməkdir ki, aşağı axın
+        əşyalarının qiymətləri konteynerdən kənar əşyaların z-indeksləri ilə
+        müqayisə olunmayacaq.0z-index Ön qurğulu qiymət: auto Veb dizaynına
+        gəldikdə, səhifənin yığma qaydası da var. Səhifənin hər bir elementi hər
+        hansı digər elementin üstündə və ya altına qatlanmış ola bilər. Z-indeks
+        xüsusiyyəti, hər bir elementin yığında olduğu yeri müəyyən edir. Əgər
+        x-index və y-indeksləri yatay və şaquli xəttlərdirsə, z-index səhifənin
+        dərinliyi, əsasən üçüncü ölçüsüdür. Bir qeyd, bir elementin z-index
+        xüsusiyyətini effektiv şəkildə istifadə etməsi üçün, blok səviyyəli
+        element olmalıdır və ya CSS dosyanızda "blok" və ya "inline-block"
+        göstəricisini istifadə edin.
+      </p>
+    </div>
+    <hr />
+
+    <!---mouse ile uzerine gelen zaman tam gorunur ------>
+
+    <div class="deyisken">
+      <img src="/img/10.jpg" alt="3" class="card three" />
+      <img src="/img/11.jpg" alt="7" class="card seven" />
+      <img src="/img/51.jpg" alt="Туз" class="card ace" />
+    </div>
+  </body>
+</html>

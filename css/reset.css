@@ -1,0 +1,115 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 94, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #f8f4f4;
+}
+a:visited {
+  color: #5115f7;
+}
+
+a:hover {
+  color: #ce1818;
+}
+
+a:active {
+  color: #141314;
+}
+
+input:focus {
+  background-color: rgb(233, 41, 191);
+}
+div > p:first-child {
+  color: rgb(12, 18, 48);
+  font-size: large;
+}
+
+a:active {
+  color: #ff00cc;
+}
+li:nth-last-child(1) {
+  color: rgb(176, 206, 43);
+  font-size: large;
+}
+
+.box p::first-line {
+  text-decoration: underline;
+}
+p.noline::first-line {
+  text-decoration: none;
+}
+
+/* burda da sriftin rengi deyismedi? */
+
+.qutu p::first-letter {
+  font-size: 5em;
+  text-color: rgb(68, 24, 189);
+}
+p.normal::first-letter {
+  font-size: 10px;
+}
+/*------*/
+
+.onde p::before {
+  content: "✧";
+}
+
+.read p::before {
+  content: "Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+.smile p::before {
+  content: "🙌";
+}
+
+/*textin bir hissesi seklin uzerine dusub? */
+
+.sekil p::before {
+  content: "";
+  background-image: url(/img/11.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+.sonda p::after {
+  content: "💕";
+}
+
+.herf {
+  font-family: "Mylove Script";
+}
+@font-face {
+  font-family: "Mylove Script";
+  src: url(/font/Mylove\ Script.otf);
+}
+
+.comica {
+  font-family: "Always Amora";
+  font-size: 60px;
+}
+@font-face {
+  font-family: "Always Amora";
+  src: url(/font/Always\ Amora.otf);
+}
+
+.comica h3 {
+  color: #ff0000 !important;
+}
+
+/* tam emin deyilem*/
+
+.elave p {
+  color: #ff0000 !important;
+}
+p {
+  color: #f8f4f4;
+}

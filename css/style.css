@@ -1,0 +1,153 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 94, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100px;
+  height: 90px;
+}
+
+h1,
+p {
+  color: rgb(246, 245, 250);
+}
+
+.container {
+  position: relative;
+}
+
+.black-box {
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 2;
+  background: lightgray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 3;
+  background: lightgreen;
+  width: 45%;
+  left: 270px;
+  top: 65px;
+  height: 100px;
+}
+
+.red-box {
+  background-color: red;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  top: 10px;
+  left: 80px;
+  z-index: 2;
+}
+
+.yellow-box {
+  background-color: yellow;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  top: -60px;
+  left: 35px;
+  z-index: 1;
+}
+
+.pink-box {
+  background-color: rgb(179, 38, 155);
+  width: 300px;
+  height: 100px;
+  position: relative;
+  top: -220px;
+  left: 120px;
+  z-index: 3;
+}
+
+/* sekil uzre emeliyyat*/
+
+.qutu {
+  position: absolute;
+  margin-left: 30%;
+}
+
+.roze-box {
+  background-image: url(/img/10.jpg);
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 10px;
+  left: 80px;
+  z-index: 2;
+}
+
+.rose-box {
+  background-image: url(/img/11.jpg);
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: -60px;
+  left: 35px;
+  z-index: 1;
+}
+
+.tree-box {
+  background-image: url(/img/19.jpg);
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: -500px;
+  left: 120px;
+  z-index: 3;
+}
+
+.about {
+  display: block;
+  margin-top: 30%;
+}
+
+.deyisken {
+  position: absolute;
+  margin-left: 30%;
+}
+.card {
+  position: relative;
+}
+.three {
+  top: 50px;
+  left: 55px;
+  z-index: 5;
+}
+.seven {
+  left: -120px;
+  top: 25px;
+  z-index: 2;
+}
+.ace {
+  left: -295px;
+  z-index: 1;
+}
+.card:hover {
+  z-index: 10;
+}

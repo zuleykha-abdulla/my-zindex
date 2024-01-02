@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+  </head>
+  <body>
+    <div class="Pseudo">
+      <h1>CSS-Pseudo Classes</h1>
+      <p>
+        CSS psevdo-classes bəzi seçicilərə xüsusi effektlər əlavə etmək üçün
+        istifadə olunur. Bu effektlərdən istifadə etmək üçün JavaScript və ya
+        hər hansı digər skriptdən istifadə etməyinizə ehtiyac yoxdur.
+        Pseudo-siniflərin sadə sintaksisi aşağıdakı kimidir:
+      </p>
+      <h2>selector:pseudo-class {property: value}</h2>
+      <ul>
+        <li>
+          visited - Ziyarət edilən linkə xüsusi still əlavə etmək üçün bu
+          sinifdən istifadə edin.
+        </li>
+
+        <li>
+          hover - Elementin üzərinə gəldikdə ona xüsusi still əlavə etmək üçün
+          bu sinifdən istifadə edin.
+        </li>
+        <li>
+          active - Aktiv elementə xüsusi still əlavə etmək üçün bu sinifdən
+          istifadə edin.
+        </li>
+
+        <li>
+          focus - Elementin fokuslu olduğu halda elementə xüsusi still əlavə
+          etmək üçün bu sinifdən istifadə edin.
+        </li>
+
+        <li>
+          first-child / last-child - elementin ilk uşaq olan elementə xüsusi
+          still əlavə etmək üçün bu sinifdən istifadə edin.
+        </li>
+        <li>
+          nth-child(odd/even/1/2/3/4) – mueyyen child elementleri secmek ucun
+          istifade olunur
+        </li>
+        <li>checked – checkbox-ın seçilməsini yoxlamaq üçün istifadə olunur</li>
+        <li>https://www.w3schools.com/css/css_pseudo_classes.asp</li>
+      </ul>
+    </div>
+    <div>
+      <h1>:visited</h1>
+      <p>
+        Aşağıdakı nümunədə ziyarət edilən linklərin rəngini təyin etmək üçün
+        :visited class-dan necə istifadə olunacağı göstərilir.
+      </p>
+      <a href="/html/index.htm">Click this link</a>
+    </div>
+
+    <div>
+      <h1>:hover</h1>
+      <p>
+        Aşağıdakı nümunə siçan göstəricisini həmin linkin üzərinə gətirdiyimiz
+        zaman keçidlərin rəngini dəyişmək üçün :hover sinifindən necə istifadə
+        olunacağını nümayiş etdirir.
+      </p>
+
+      <a href="/html/index.htm">Bring Mouse Here</a>
+    </div>
+
+    <div>
+      <h1>:active</h1>
+      <p>
+        Aşağıdakı nümunə aktiv linklərin rəngini dəyişmək üçün :active sinfindən
+        necə istifadə olunacağını nümayiş etdirir.
+      </p>
+      <a href="/html/index.htm">Click This Link</a>
+    </div>
+
+    <div>
+      <h1>:focus</h1>
+      <p>
+        Aşağıdakı nümunə fokuslanmış linklərin və ya inputların rəngini dəyişmək
+        üçün :focus sinifindən necə istifadə olunacağını nümayiş etdirir.
+      </p>
+      <input type="text" />
+    </div>
+
+    <div>
+      <h1>:first-child</h1>
+      <p>
+        Elementin içindəki ilk uşaq elementi seçmək üçün istifadə olunur.
+        Aşağıdakı nümunədə bunu aydın görə bilərik
+      </p>
+      <div>
+        <p>First paragraph in div. This paragraph will be indented</p>
+        <p>Second paragraph in div. This paragraph will not be indented</p>
+      </div>
+      <p>But it will not match the paragraph in this HTML:</p>
+      <div>
+        <h3>Heading</h3>
+        <p>
+          The first paragraph inside the div. This paragraph will not be
+          effected.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1>İmportant Selectors</h1>
+      <ul>
+        <li>
+          (div > p =>) Əsas elementin div elementi olduğu bütün p elementlərini
+          seçir
+        </li>
+        <li>
+          (div + p => ) - div elementlərindən dərhal sonra yerləşdirilən ilk p
+          elementini seçir
+        </li>
+        <li>
+          (p ~ ul =>) Qarşısında p elementi olan hər bir ul elementi seçir
+        </li>
+      </ul>
+      <p>
+        Selectorların hamısına bu linkdən baxa bilərsiniz, önümüzdəki dərslərdə
+        proyekt işləyəndə hamısını istifadə edəcəyik
+      </p>
+
+      <a href="//www.w3schools.com/cssref/css_selectors.php"
+        >//www.w3schools.com/cssref/css_selectors.php</a
+      >
+    </div>
+
+    <div>
+      <h1>CSS-Pseudo Elements</h1>
+      <ul>
+        <li>
+          :first-line => Seçicidə mətnin birinci sətrinə xüsusi üslublar əlavə
+          etmək üçün bu elementdən istifadə edin.
+        </li>
+        <li>
+          :first-letter => Seçicidə mətnin ilk hərfinə xüsusi üslub əlavə etmək
+          üçün bu elementdən istifadə edin.
+        </li>
+        <li>
+          ::before => Elementdən əvvəl bəzi məzmun daxil etmək üçün bu
+          elementdən istifadə edin.
+        </li>
+        <li>
+          ::after => Bir elementdən sonra bəzi məzmun daxil etmək üçün bu
+          elementdən istifadə edin
+        </li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h1>::first-line</h1>
+      <p>
+        Aşağıdakı nümunə sənəddəki elementlərin birinci sətirinə xüsusi
+        effektlər əlavə etmək üçün :first-line elementindən necə istifadə
+        olunacağını nümayiş etdirir.
+      </p>
+      <p class="noline">
+        This line would not have any underline because this belongs to noline
+        class. - Bu sətirdə heç bir alt çizgi olmazdı, çünki bu, noline sinfinə
+        aiddir
+      </p>
+      <p>
+        The first line of this paragraph will be underlined as defined in the
+        CSS rule above. Rest of the lines in this paragraph will remain normal.
+        This example shows how to use :first-line pseduo element to give effect
+        to the first line of any HTML element. - Bu bəndin birinci sətiri
+        yuxarıdakı CSS qaydasında müəyyən edildiyi kimi qeyd olunacaq. Bu
+        abzasdakı sətirlərin qalan hissəsi normal olaraq qalacaq. Bu nümunə
+        göstərir ki, birinci sətirə effekt vermək üçün :first-line pseduo
+        element istifadə etmək olar hər hansı bir HTML elementinin
+      </p>
+    </div>
+
+    <div class="qutu">
+      <h1>::first-letter</h1>
+      <p>
+        Aşağıdakı nümunə sənəddəki elementlərin ilk hərfinə xüsusi effekt əlavə
+        etmək üçün :first-letter elementindən necə istifadə olunacağını nümayiş
+        etdirir.
+      </p>
+      <p class="normal">
+        First character of this paragraph will be normal and will have font size
+        10 px -Bu abzasın birinci xarakteri normal olacaq və şrift ölçüsünə
+        malik olacaq 10 px.
+      </p>
+      <p>
+        The first character of this paragraph will be 5em big and in red color
+        as defined in the CSS rule above. Rest of the characters in this
+        paragraph will remain normal. This example shows how to use
+        :first-letter pseduo element to give effect to the first characters of
+        any HTML element.-Bu abzasın birinci xarakteri yuxarıdakı CSS qaydasında
+        müəyyən edilmiş 5em böyük və qırmızı rəngdə olacaq. Bu abzasdakı
+        personajların qalan hissəsi normal olaraq qalacaq. Bu nümunə hər hansı
+        bir HTML elementinin ilk hərflərinə effekt vermək üçün :first-letter
+        pseduo elementindən necə istifadə etmək lazım olduğunu göstərir
+      </p>
+    </div>
+
+    <div class="onde">
+      <h1>::before</h1>
+      <p>
+        Aşağıdakı nümunə hər hansı bir elementdən əvvəl bəzi məzmun əlavə etmək
+        üçün elementdən before :-dan necə istifadə olunacağını nümayiş etdirir.
+      </p>
+
+      <p>This line will be preceded by a bullet.</p>
+      <p>This line will be preceded by a bullet.</p>
+      <p>This line will be preceded by a bullet.</p>
+    </div>
+
+    <div class="read">
+      <h1>Sətrin əvvəlinə mətn yerləşdirmək mümkündür</h1>
+
+      <p>My name is Orxan</p>
+      <p>I live in Ducksburg</p>
+    </div>
+
+    <div class="smile">
+      <h1>Sətrin əvvəlinə smile yerləşdirmək mümkündür</h1>
+
+      <p>Allah qorusun hamini</p>
+
+      <p>God bless all people</p>
+    </div>
+
+    <div class="sekil">
+      <h1>Sətrin əvvəlinə şəkil yerləşdirmək mümkündür</h1>
+      <p>My name is Orxan</p>
+      <p>I live in Ducksburg</p>
+    </div>
+
+    <div class="sonda">
+      <h1>::after</h1>
+
+      <p>This line will be succeeded by a bullet.</p>
+      <p>This line will be succeeded by a bullet.</p>
+      <p>This line will be succeeded by a bullet.</p>
+    </div>
+    <div>
+      <h1>CSS-@ Rules</h1>
+      <ul>
+        <li>
+          @import: qaydası css-faylını html-ə daxil etmək üçün istifadə olunur
+        </li>
+        <li>@font-face –lokaldan fontu daxil etmək üçün istifadə olunur</li>
+        <li>
+          !important qayda istifadəçi tərəfindən müəyyən edilmiş qaydanın daha
+          əvvəl verilmiş stildən üstün olması lazım olduğunu göstərir.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>@import</h1>
+      <p>
+        @import qaydası qeyd etdiyimiz kimi css-i index-ə daxil etməyə imkan
+        verir. Onun dəyəri URL-dir.
+      </p>
+    </div>
+
+    <div class="herf">
+      <h1>@font-face</h1>
+      <p>
+        Lokalımıza endirdiyimiz font-ları css-də layihəyə import etmək üçün
+        istifadə olunur. Dövlət layihələrində font-ları linklər vasitəsi ilə
+        vermək məsləhətli deyil onun üçün bu qaydadan istifadə edirlər.
+      </p>
+    </div>
+    <div class="comica">
+      <h3>@font-face</h3>
+      <p>
+        Lokalımıza endirdiyimiz font-ları css-də layihəyə import etmək üçün
+        istifadə olunur. Dövlət layihələrində font-ları linklər vasitəsi ilə
+        vermək məsləhətli deyil onun üçün bu qaydadan istifadə edirlər.
+      </p>
+    </div>
+
+    <div class="elave">
+      <h3>!important</h3>
+      <p>
+        Adətən layihəyə BootStrap kitabxanasını əlavə etdikdə özünün paketində
+        gələn css stilləri olur və bəzən onları istifadə etmək istəmirik.Bu
+        zaman öz css-lərimizi yazırıq və yazdığımız css-ləri qəbul etmədikdə biz
+        bu formadan istifadə edirik.
+      </p>
+    </div>
+  </body>
+</html>
